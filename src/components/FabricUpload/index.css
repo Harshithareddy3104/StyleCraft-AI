@@ -1,0 +1,183 @@
+
+.fabric-upload {
+  padding: 60px 8%;
+  min-height: 75vh;
+  background-color: #fffdf9;
+}
+
+/* Heading */
+
+.upload-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.upload-heading p {
+  color: #ad8050;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.upload-heading h1 {
+  color: #302820;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.upload-heading span {
+  color: #84776a;
+  font-size: 16px;
+}
+
+/* Upload Container */
+
+.upload-container {
+  max-width: 750px;
+  margin: auto;
+}
+
+.upload-box {
+  min-height: 330px;
+  border: 2px dashed #c8ad8e;
+  border-radius: 12px;
+  background-color: #f8f3ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background-color: #f1e7d9;
+  border-color: #ad8050;
+}
+
+.upload-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #e8d7c2;
+  color: #8c633b;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.upload-box h2 {
+  color: #302820;
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.upload-box p {
+  color: #84776a;
+  margin-bottom: 22px;
+}
+
+.choose-button {
+  background-color: #302820;
+  color: white !important;
+  padding: 13px 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.upload-box small {
+  color: #84776a;
+  font-size: 12px;
+}
+
+/* Image Preview */
+
+.preview-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f3ec;
+  border-radius: 12px;
+}
+
+.preview-container h2 {
+  margin-bottom: 25px;
+  color: #302820;
+}
+
+.fabric-preview {
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.preview-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.replace-button,
+.remove-button {
+  padding: 12px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.replace-button {
+  background-color: #302820;
+  color: white;
+}
+
+.remove-button {
+  border: 1px solid #302820;
+  background-color: transparent;
+  color: #302820;
+}
+
+.replace-button:hover {
+  background-color: #ad8050;
+}
+
+.remove-button:hover {
+  background-color: #302820;
+  color: white;
+}
+
+/* Error Message */
+
+.upload-error {
+  color: #c0392b;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .fabric-upload {
+    padding: 40px 5%;
+  }
+
+  .upload-heading h1 {
+    font-size: 29px;
+  }
+
+  .upload-box {
+    padding: 20px;
+  }
+
+  .fabric-preview {
+    height: 250px;
+  }
+}
